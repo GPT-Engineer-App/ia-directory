@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Container, VStack, HStack, Text, Box, Input, Select, Button, SimpleGrid, Card, CardHeader, CardBody, CardFooter, Heading, IconButton } from "@chakra-ui/react";
+import { Container, VStack, HStack, Text, Box, Input, Select, Button, SimpleGrid, Card, CardHeader, CardBody, CardFooter, Heading, IconButton, Image, Tag, TagLabel } from "@chakra-ui/react";
 import { FaSearch, FaInfoCircle } from "react-icons/fa";
 
 const tools = [
