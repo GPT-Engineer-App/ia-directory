@@ -4,20 +4,49 @@ import { FaSearch, FaInfoCircle } from "react-icons/fa";
 
 const tools = [
   {
-    name: "Ferramenta de Análise de Sentimento",
+    name: "Hugging Face",
     category: "Análise de Texto",
-    description: "Ferramenta que analisa o sentimento em textos, identificando emoções como alegria, tristeza, raiva, etc.",
-    features: ["Análise em tempo real", "Suporte a múltiplos idiomas", "API disponível"],
-    pricing: "Gratuito até 1000 requisições por mês",
-    useCases: ["Monitoramento de redes sociais", "Análise de feedback de clientes", "Pesquisa de mercado"],
+    description: "Plataforma que oferece uma ampla gama de modelos de linguagem natural para diversas aplicações.",
+    features: ["Modelos pré-treinados", "API fácil de usar", "Comunidade ativa"],
+    pricing: "Gratuito com opções pagas",
+    useCases: ["Análise de sentimentos", "Tradução automática", "Geração de texto"],
+    website: "https://huggingface.co/",
   },
   {
-    name: "Gerador de Imagens por IA",
+    name: "DALL-E",
     category: "Criação de Conteúdo",
-    description: "Ferramenta que gera imagens a partir de descrições textuais usando inteligência artificial.",
+    description: "Ferramenta de IA que gera imagens a partir de descrições textuais.",
     features: ["Geração de imagens de alta qualidade", "Customização de estilos", "API disponível"],
-    pricing: "Plano básico gratuito, planos pagos a partir de R$ 50/mês",
+    pricing: "Plano básico gratuito, planos pagos a partir de $15/mês",
     useCases: ["Criação de conteúdo para redes sociais", "Design gráfico", "Marketing"],
+    website: "https://www.openai.com/dall-e-2",
+  },
+  {
+    name: "ChatGPT",
+    category: "Assistente Virtual",
+    description: "Modelo de linguagem natural que pode manter conversas e responder perguntas.",
+    features: ["Respostas em tempo real", "Suporte a múltiplos idiomas", "API disponível"],
+    pricing: "Gratuito com opções pagas",
+    useCases: ["Atendimento ao cliente", "Assistente pessoal", "Educação"],
+    website: "https://www.openai.com/chatgpt",
+  },
+  {
+    name: "DeepL",
+    category: "Tradução",
+    description: "Serviço de tradução automática que oferece traduções de alta qualidade.",
+    features: ["Tradução em tempo real", "Suporte a múltiplos idiomas", "API disponível"],
+    pricing: "Gratuito com opções pagas",
+    useCases: ["Tradução de documentos", "Comunicação internacional", "Educação"],
+    website: "https://www.deepl.com/",
+  },
+  {
+    name: "Grammarly",
+    category: "Escrita Assistida",
+    description: "Ferramenta que ajuda a melhorar a escrita, corrigindo gramática e sugerindo melhorias.",
+    features: ["Correção gramatical", "Sugestões de estilo", "API disponível"],
+    pricing: "Plano básico gratuito, planos pagos a partir de $12/mês",
+    useCases: ["Escrita de e-mails", "Redação de documentos", "Educação"],
+    website: "https://www.grammarly.com/",
   },
   // Adicione mais ferramentas conforme necessário
 ];
@@ -76,7 +105,7 @@ const Index = () => {
                 </VStack>
               </CardBody>
               <CardFooter>
-                <Button leftIcon={<FaInfoCircle />} colorScheme="teal">
+                <Button leftIcon={<FaInfoCircle />} colorScheme="teal" as="a" href={tool.website} target="_blank">
                   Saiba Mais
                 </Button>
               </CardFooter>
